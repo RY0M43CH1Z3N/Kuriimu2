@@ -11,7 +11,7 @@
             <MenuItem Header="_File">
                 <MenuItem Header="_Open" Name="OpenMenu">
                     <MenuItem.Icon>
-                        <Image Source="../images/menu-open.png"/>
+                        <Image Source="pack://application:,,,/Kuriimu;component/images/menu-open.png"/>
                     </MenuItem.Icon>
                 </MenuItem>
             </MenuItem>
@@ -21,8 +21,7 @@
             <ToolBar ToolBarTray.IsLocked="True">
                 <Button Name="OpenButton">
                     <StackPanel>
-                        <Image Source="../images/menu-open.png"/>
-                        <TextBlock>Open?</TextBlock>
+                        <Image Source="pack://application:,,,/Kuriimu;component/images/menu-open.png"/>
                     </StackPanel>
                 </Button>
             </ToolBar>
