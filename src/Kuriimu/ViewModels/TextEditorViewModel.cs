@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Caliburn.Micro;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using Caliburn.Micro;
 
 namespace Kuriimu.ViewModels
 {
-    class TextEditorViewModel : Screen
+    public sealed class TextEditorViewModel : Screen
     {
         public TextEditorViewModel()
         {
@@ -53,9 +51,12 @@ namespace Kuriimu.ViewModels
             }
         }
 
+        public string EntryCount => Entries.Count + (Entries.Count > 1 ? " Entries" : " Entry");
+
         public void AddEntry()
         {
             Entries.Add(new Entry($"Label {Entries.Count}", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")));
+            NotifyOfPropertyChange(nameof(EntryCount));
         }
     }
 }
