@@ -18,7 +18,7 @@
 
             <DockPanel Grid.Column="0">
                 <ToolBarPanel DockPanel.Dock="Top">
-                    <ToolBar ToolBarTray.IsLocked="True" Template="{DynamicResource ToolBarControlTemplate}">
+                    <ToolBar ToolBarTray.IsLocked="True">
                         <Label Content="{Binding EntryCount, FallbackValue='1 Entry'}"></Label>
                         <Button Name="AddEntry" DockPanel.Dock="Top">
                             <StackPanel Orientation="Horizontal">
@@ -49,7 +49,7 @@
 
                     <DockPanel Grid.Column="0">
                         <ToolBarPanel DockPanel.Dock="Top">
-                            <ToolBar ToolBarTray.IsLocked="True" Template="{DynamicResource ToolBarControlTemplate}">
+                            <ToolBar ToolBarTray.IsLocked="True">
                                 <Label Content="Text"></Label>
                             </ToolBar>
                         </ToolBarPanel>
@@ -58,7 +58,7 @@
                     <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Width="4" />
                     <DockPanel Grid.Column="2">
                         <ToolBarPanel DockPanel.Dock="Top">
-                            <ToolBar ToolBarTray.IsLocked="True" Template="{DynamicResource ToolBarControlTemplate}">
+                            <ToolBar ToolBarTray.IsLocked="True">
                                 <Label Content="Original"></Label>
                             </ToolBar>
                         </ToolBarPanel>
@@ -78,7 +78,7 @@
 
                     <DockPanel Grid.Column="0">
                         <ToolBarPanel DockPanel.Dock="Top">
-                            <ToolBar ToolBarTray.IsLocked="True" Template="{DynamicResource ToolBarControlTemplate}">
+                            <ToolBar ToolBarTray.IsLocked="True">
                                 <Label Content="Preview"></Label>
                             </ToolBar>
                         </ToolBarPanel>
@@ -89,7 +89,7 @@
                     <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Width="4" />
                     <DockPanel Grid.Column="2">
                         <ToolBarPanel DockPanel.Dock="Top">
-                            <ToolBar ToolBarTray.IsLocked="True" Template="{DynamicResource ToolBarControlTemplate}">
+                            <ToolBar ToolBarTray.IsLocked="True">
                                 <Label Content="Lot"></Label>
                             </ToolBar>
                         </ToolBarPanel>

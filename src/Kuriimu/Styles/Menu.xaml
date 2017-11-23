@@ -5,6 +5,7 @@
         <Style.Resources>
             <Style TargetType="{x:Type MenuItem}">
                 <Setter Property="Padding" Value="9,1,9,3"/>
+                <Setter Property="Template" Value="{DynamicResource MenuItemControlTemplate}"></Setter>
             </Style>
         </Style.Resources>
         <Setter Property="Background">
@@ -21,7 +22,7 @@
         </Setter>
         <Setter Property="Padding" Value="2"></Setter>
     </Style>
-    <ControlTemplate x:Key="MenuItemControlTemplate1" TargetType="{x:Type MenuItem}">
+    <ControlTemplate x:Key="MenuItemControlTemplate" TargetType="{x:Type MenuItem}">
         <Grid x:Name="Grid" SnapsToDevicePixels="True">
             <Rectangle x:Name="Bg" Fill="{TemplateBinding Background}" Margin="0" RadiusY="0" RadiusX="0" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="1"/>
             <DockPanel x:Name="DockPanel">

@@ -10,7 +10,7 @@
         Background="#F0F0F0">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File" Template="{DynamicResource MenuItemControlTemplate1}">
+            <MenuItem Header="_File">
                 <MenuItem Header="_Open" Name="OpenMenu">
                     <MenuItem.Icon>
                         <Image Source="pack://application:,,,/images/menu-open.png" />
@@ -20,7 +20,7 @@
         </Menu>
 
         <ToolBarTray DockPanel.Dock="Top" Background="Transparent">
-            <ToolBar ToolBarTray.IsLocked="True" Template="{DynamicResource ToolBarControlTemplate}">
+            <ToolBar ToolBarTray.IsLocked="True">
                 <Button Name="NewButton">
                     <StackPanel>
                         <Image Source="pack://application:,,,/images/menu-new.png" />
@@ -42,7 +42,7 @@
                     </StackPanel>
                 </Button>
             </ToolBar>
-            <ToolBar Template="{DynamicResource ToolBarControlTemplate}">
+            <ToolBar>
                 <Button Name="Button">
                     <StackPanel>
                         <Image Source="pack://application:,,,/images/menu-new.png" />
